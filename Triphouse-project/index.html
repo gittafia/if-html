@@ -9,110 +9,112 @@
     <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <div class="header-wrapper">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <img src="./icons/logo_vector.png" alt="logo">
+    <div class="content">
+        <header>
+            <div class="header-wrapper">
+                <div class="header__inner">
+                    <div class="header__logo">
+                        <img src="./icons/logo_vector.png" alt="logo">
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="header__nav_items">
+                            <li class="header__nav_item">
+                                <a class="header__nav_links" href="#">Stays</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a class="header__nav_links" href="#">Attractions</a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a class="header__nav_links" href="#">
+                                    <img class="after" src="./icons/Night.png" alt="Night">
+                                </a>
+                            </li>
+                            <li class="header__nav_item">
+                                <a class="header__nav_links" href="#">
+                                    <img class="after" src="./icons/AccountCircle.png" alt="AccountCircle">
+                                </a>
+                            </li>gi
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="header__nav">
-                    <ul class="header__nav_items">
-                        <li class="header__nav_item">
-                            <a class="header__nav_links" href="#">Stays</a>
+                <h1 class="header__inner_title">Discover stays <span>to live, work or just relax</span></h1>
+                <div class="android_ios" >
+                    <img src="./img/google-play-badge.svg" alt="GooglePlay">
+                    <img src="./img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917 1.svg" alt="IOS">
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="offer-section">
+                <div class="offer-section__wrapper">
+                    <h1>What do we offer</h1>
+                    <div class="line"></div>
+                    <ul class="offer-list">
+                        <li class="offer-list__item">
+                            <div class="offer-list__icon">
+                                <img src="./icons/headphones.png" alt="headphones"/>
+                            </div>
+                            <p>Support 24/7</p>
+                        </li>    
+                        <li class="offer-list__item">
+                            <div class="offer-list__icon">
+                                <img src="./icons/dialogue.png" alt="dialogue"/>
+                            </div>
+                            <p>Communicate directly</p>
+                        </li>    
+                        <li class="offer-list__item">
+                            <div class="offer-list__icon">
+                                <img src="./icons/book.png" alt="book"/>
+                            </div>
+                            <p>Book online</p>
                         </li>
-                        <li class="header__nav_item">
-                            <a class="header__nav_links" href="#">Attractions</a>
-                        </li>
-                        <li class="header__nav_item">
-                            <a class="header__nav_links" href="#">
-                                <img class="after" src="./icons/Night.png" alt="Night">
-                            </a>
-                        </li>
-                        <li class="header__nav_item">
-                            <a class="header__nav_links" href="#">
-                                <img class="after" src="./icons/AccountCircle.png" alt="AccountCircle">
-                            </a>
-                         </li>
-                    </ul>
-                </nav>
-            </div>
-            <h1 class="header__inner_title">Discover stays <span>to live, work or just relax</span></h1>
-            <div class="android_ios" >
-                <img src="./img/google-play-badge.svg" alt="GooglePlay">
-                <img src="./img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917 1.svg" alt="IOS">
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="offer-section">
-            <div class="offer__wrapper">
-                <h1>What do we offer</h1>
-                <div class="line"></div>
-                <ul class="offers">
-                    <li class="offer">
-                        <div class="offer__icon">
-                            <img src="./icons/headphones.png" alt="headphones"/>
-                        </div>
-                        <p>Support 24/7</p>
-                    </li>    
-                    <li class="offer">
-                        <div class="offer__icon">
-                            <img src="./icons/dialogue.png" alt="dialogue"/>
-                        </div>
-                        <p>Communicate directly</p>
-                    </li>    
-                    <li class="offer">
-                        <div class="offer__icon">
-                            <img src="./icons/book.png" alt="book"/>
-                        </div>
-                        <p>Book online</p>
-                    </li>
-                    <li class="offer">
-                        <div class="offer__icon">
-                            <img src="./icons/finger.png" alt="review"/>
-                        </div>
-                        <p>Real quest review</p>
-                    </li>    
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-wrapper">
-            <div class="logo">
-                <img src="./icons/logo_vector.svg" alt="logo_TripHouse">
-            </div>
-            <div class="footer_nav">
-                <div class="footer_nav__item">
-                    <a href="#">About</a>
-                    <ul>
-                        <li><a href="#">How Triphouse works</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
+                        <li class="offer-list__item">
+                            <div class="offer-list__icon">
+                                <img src="./icons/finger.png" alt="review"/>
+                            </div>
+                            <p>Real quest review</p>
+                        </li>    
                     </ul>
                 </div>
-                <div class="footer_nav__item">
-                    <a href="#">Property types</a>
-                    <ul>
-                        <li><a href="#">Guest houses</a></li>
-                        <li><a href="#">Hotels</a></li>
-                        <li><a href="#">Apartments</a></li>
-                        <li><a href="#">Villas</a></li>
-                        <li><a href="#">Holiday homes</a></li>
-                        <li><a href="#">Hostels</a></li>
-                    </ul>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-wrapper">
+                <div class="logo">
+                    <img src="./icons/logo_vector.svg" alt="logo_TripHouse">
                 </div>
-                <div class="footer_nav__item">
-                    <a href="#">Support</a>
-                    <ul>
-                        <li><a href="#">Contact Customer Service</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
+                <div class="footer_nav">
+                    <div class="footer_nav__item">
+                        <a href="#">About</a>
+                        <ul>
+                            <li><a href="#">How Triphouse works</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Terms</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav__item">
+                        <a href="#">Property types</a>
+                        <ul>
+                            <li><a href="#">Guest houses</a></li>
+                            <li><a href="#">Hotels</a></li>
+                            <li><a href="#">Apartments</a></li>
+                            <li><a href="#">Villas</a></li>
+                            <li><a href="#">Holiday homes</a></li>
+                            <li><a href="#">Hostels</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_nav__item">
+                        <a href="#">Support</a>
+                        <ul>
+                            <li><a href="#">Contact Customer Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
                 </div>
+                <p>&copy; 2020 Triphouse,lnc.All rights reserved</p>
             </div>
-            <p>&copy; 2020 Triphouse,lnc.All rights reserved</p>
-        </div>
-    </footer>
+        </footer>
+    </div>    
 </body>
 </html>
