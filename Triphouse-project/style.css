@@ -4,17 +4,135 @@
     box-sizing: border-box;
 }
 
-/* body {
-    max-width: 1440px;
-} */
+body {
+    font-family: 'Roboto', sans-serif;
+} 
 
-.offer__wrapper {
+/* all content */
+
+.content {
+max-width: 1440px;
+margin: 0px auto;
+}
+
+/* header */
+
+header {
+    height: 100vh;
+    background: url(./img/top-section.png) no-repeat;
+    padding-top: 51px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 205px;
+    height: 40px;
+    margin-left: 104px;
+}
+
+.header__nav {
+    display: flex;
+    margin-right: 104px;
+}
+
+.header__nav_links {
+margin-right: 24px;
+}
+    
+.header__nav_items {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav_item {
+    margin-right: 24px;
+    list-style-type: none;
+} 
+
+.header__nav_links {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    position: relative;
+}  
+
+.header__nav_item:nth-child(2n) {
+	margin-right: 48px;
+}
+
+.header__nav_item:nth-child(3n) {
+	width: 32px;
+	height: 32px;
+	margin-right: 24px;
+}
+
+.header__nav_item:last-child {
+	width: 40px;
+	height: 40px;
+	margin-right: 0px;
+} 
+
+.header__nav_links:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #F5BD41;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 3;
+    display: none;
+} 
+/* .header__link:focus {
+    border-bottom: solid 5px #bbff00;
+    border-radius: 3px;
+    transition: border-bottom 0.3s;
+  } */
+
+.header__nav_links:hover:after {
+    display: block;
+}
+
+.header__inner_title {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 59px;
+    color: white;
+    margin-left: 104px;
+    margin-top: 202px;
+}
+
+span {
+    display: block;
+}
+
+.android_ios {
+    text-align: center;
+    margin-top: 329px;
+}
+
+/* main section-offer */
+
+.offer-section__wrapper {
     padding: 120px 104px;
 }
 
-.offer__wrapper h1 {
+.offer-section__wrapper h1 {
     text-align: center;
     font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 47px;
 }
 
 .line {
@@ -24,15 +142,14 @@
     margin: 20px auto 0;
 }
 
-.offers {
+.offer-list {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    margin-top: 80px;
-    
+    margin-top: 80px;  
 }
 
-.offer__icon {
+.offer-list__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,14 +158,124 @@
     height: 100px;
 }
 
-.offer p {
+.offer-list__item p {
     text-align: center;
     font-size: 24px;
     margin-top: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
 
+/* footer */
+
+footer {
+    background: #10367C;
+    /* height: 630px; */
+}
+
+.footer-wrapper {
+    padding: 119px 272px 200px 104px;
+}
+
+.logo {
+    display: none;
+}
+
+.footer_nav {
+display: flex;
+text-decoration: none;
+}
+
+.footer_nav li {
+    list-style: none;
+    color: white;
+    font-size: 20px; 
+    margin-top: 24px; 
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+ }
+
+.footer_nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 23px;
+   }
+.footer_nav__item {
+    width: 30%;
+}
+.footer-wrapper p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    color: white;
+    margin-top: 64px;
+}
+
+/* media */
+
 @media (max-width: 360px) {
-    .offers {
+
+    /* main section-offer */
+
+    .offer-section__wrapper {
+        padding: 24px 73px 40px 73px;
+    }
+
+    .offer-section__wrapper h1 {
+        font-size: 28px;
+    }
+        
+    .line {
+        display: none;
+    }
+
+    .offer-list {
         flex: 1 100px;
         flex-flow: column;
     }
+
+    .offer-list__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .offer-list__item p {
+        font-size: 15px;
+    }
+
+    /* footer */
+
+    .footer-wrapper {
+        padding: 40px 68px 40px 67px;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .footer_nav li {
+        list-style-type: none;
+    }
+
+    .footer_nav a {
+    font-size: 15px;
+    text-decoration: underline;
+    }
+
+    .footer_nav__item ul {
+        display: none;
+    }
+
+    .footer-wrapper p {
+        font-size: 12px;
+        margin-top: 32px;
+    }
+}
