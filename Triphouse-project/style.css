@@ -21,12 +21,14 @@ header {
     height: 100vh;
     background: url(./img/top-section.png) no-repeat;
     padding-top: 51px;
+    height: 900px;
 }
 
 .header__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 186px;
 }
 
 .header__logo {
@@ -46,13 +48,14 @@ margin-right: 24px;
     
 .header__nav_items {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .header__nav_item {
     margin-right: 24px;
     list-style-type: none;
 } 
+
 
 .header__nav_links {
     color: white;
@@ -72,13 +75,26 @@ margin-right: 24px;
 	width: 32px;
 	height: 32px;
 	margin-right: 24px;
+    background-image: url(./css_sprites.png);
+    background-position: -70px -226px;
 }
 
-.header__nav_item:last-child {
+.header__nav_item:nth-child(4) {
 	width: 40px;
 	height: 40px;
 	margin-right: 0px;
-} 
+    background-image: url(./css_sprites.png);
+    background-position: -226px -149px;
+}
+
+.header__nav_item:nth-child(4n):hover {
+    background-image: url(./css_sprites.png);
+    background-position: -10px -226px;   
+}
+
+.header__nav_item:last-child {
+	display: none;
+}
 
 .header__nav_links:after {
     content: "";
@@ -109,16 +125,95 @@ margin-right: 24px;
     line-height: 59px;
     color: white;
     margin-left: 104px;
-    margin-top: 202px;
+    margin-bottom: 100px;
 }
 
+form {
+    padding-left: 104px;
+    padding-right: 104px;
+    display: flex;
+}
+
+form label {
+    color: white;
+}
+
+form p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 24px;
+}
+
+form input {
+    height: 64px;
+    width: 100%;
+    border-radius: 8px;
+
+}
+
+.form__first_input {
+    flex-grow: 3;
+}
+
+input::placeholder {
+    padding-left: 24px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.form__second_input {
+    flex-grow: 2;
+}
+
+
+.form__third_input {
+    flex-grow: 2.5;
+    margin-top: 44px;
+}
+
+input {
+    border-radius: 8px;
+    border-color:transparent;
+    outline: none;
+}
+
+input:focus {
+    border-color: #F5BD41;
+    border-width: 3px;
+}
+
+
+form button {
+    flex-grow: 1;
+    height: 64px;
+    margin-top: 44px;
+    background: #3077C6;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    color: white;
+    border-radius: 8px;
+}
+    
 span {
     display: block;
 }
 
+.form__mobile {
+    display: none;
+}
+
 .android_ios {
-    text-align: center;
-    margin-top: 329px;
+    width: 265px;
+    display: flex;
+    justify-content: space-between;
+    margin: 120px auto 0px;
 }
 
 /* main section-offer */
@@ -133,6 +228,7 @@ span {
     font-style: normal;
     font-weight: 500;
     line-height: 47px;
+    color: #383838; 
 }
 
 .line {
@@ -147,25 +243,47 @@ span {
     justify-content: space-between;
     list-style-type: none;
     margin-top: 80px;  
+    align-items:center;
 }
 
-.offer-list__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+.headphones_icon {
+    background-image:url(./css_sprites.png);
+    background-position: -10px -114px;
+    height: 91px;
+    width: 75px;
+    margin-bottom: 52px;
+}
+
+.communicate_icon {
+    background-image: url(./css_sprites.png);
+    background-position: -122px -10px;
+    width: 83px;
+    height: 83px;
+    margin-bottom: 56px;
+}
+
+.book_icon {
+    background-image: url(./css_sprites.png);
+    background-position: -106px -114px;
     width: 100px;
-    height: 100px;
+    height: 67px;
+    margin-bottom: 64px;
+}
+
+.review_icon {
+    background-image:url(./css_sprites.png);
+    background-position: -10px -10px;
+    width: 92px;
+    height: 83px;
+    margin-bottom: 55px;
 }
 
 .offer-list__item p {
-    text-align: center;
-    font-size: 24px;
     margin-top: 50px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
-}
+} 
 
 /* footer */
 
@@ -205,9 +323,11 @@ text-decoration: none;
     font-weight: 500;
     line-height: 23px;
    }
+
 .footer_nav__item {
     width: 30%;
 }
+
 .footer-wrapper p {
     font-size: 14px;
     font-style: normal;
@@ -219,11 +339,89 @@ text-decoration: none;
 
 /* media */
 
-@media (max-width: 360px) {
+/* @media (max-width: 360px) {
+
+    /* header */
+
+    /* .header-wrapper {
+        padding: 12px 16px 40px;
+    }
+
+    .header__logo img {
+        width: 122px;
+        height: 24px;
+    } */
+
+    /* .header__nav_item:nth-child(1) {
+        display: none;
+    } 
+    
+    .header__nav_item:nth-child(2) {
+        display: none;
+    }
+
+    .header__nav_item:nth-child(3) {
+        background-image: url(./css_sprites_mobile.png);
+        background-position: -98px -176px;
+        width: 16px;
+        height: 16px;
+    }  */
+
+    /* .header__nav_item:nth-child(4) {
+        background-image: url(./css_sprites_mobile.png);
+        background-position: -10px -176px;
+        width: 24px;
+        height: 24px;
+    } 
+
+    .header__nav_burger {
+        background-image:url(./css_sprites_mobile.png);
+        background-position: -54px -176px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .header__inner_title {
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 35px;
+        margin-top: 52px;
+    } */
+
+    /* form {
+        display: none;
+    }
+
+    .form__mobile {
+        display: flex;
+        background: yellow;
+        padding: 8px;
+    }
+
+    .form__mobile input {
+        width: 100%;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 18px;
+    }
+
+    .button__mob {
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        background: #3077C6;
+        color: #ffffff;
+        font-size: 19px;
+    } */
+
+
+
 
     /* main section-offer */
 
-    .offer-section__wrapper {
+    /* .offer-section__wrapper {
         padding: 24px 73px 40px 73px;
     }
 
@@ -247,11 +445,11 @@ text-decoration: none;
 
     .offer-list__item p {
         font-size: 15px;
-    }
+    } */
 
     /* footer */
 
-    .footer-wrapper {
+    /* .footer-wrapper {
         padding: 40px 68px 40px 67px;
     }
 
@@ -278,4 +476,9 @@ text-decoration: none;
         font-size: 12px;
         margin-top: 32px;
     }
-}
+}  */
+
+
+
+
+        
