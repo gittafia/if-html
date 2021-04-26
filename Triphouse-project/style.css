@@ -526,6 +526,7 @@ input:focus {
 
 .recommendations__list li img {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .recommendations__list a {
