@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
     <title>TripHouse</title>
 </head>
 <body>
@@ -18,8 +18,8 @@
                     </div>
                     <nav class="menu">
                         <ul class="menu__list">
-                            <li class="menu__list-item">
-                                <a class="menu__link" href="#">Stays</a>
+                            <li class="menu__list-item ">
+                                <a class="active__link" href="#">Stays</a>
                             </li>
                             <li class="menu__list-item">
                                 <a class="menu__link" href="#">Attractions</a>
@@ -75,7 +75,7 @@
                 </form>
                 <form class="header__form-mobile" action="/">
                     <div class="header__input--search">
-                    <input type="text" placeholder="&#128269; Your destination or hotel name"/>
+                    <input type="text"  placeholder="Your destination or hotel name"/>
                     </div>
                     <div class="header__input--check">
                     <input  type="date" placeholder="Tue 15 Sept 2020" name="Check-in_mob" id="date_in" onfocus="(this.type='date')" onblur="(this.type='text')"/>
@@ -102,7 +102,6 @@
             <div class="services__title">
                 <h2>What do we offer</h2>
             </div>
-            <div class="services__line"></div>
             <ul class="services__list">
                 <li class="services__item">
                     <div class="support"></div>
@@ -125,27 +124,75 @@
     </section>
     <section class="services-mobile">
         <div class="container-mobile">
-            <div class="services__title">
+            <div class="services-mobile__title">
                 <h2>What do we offer</h2>
             </div>
-            <ul class="services__list">
-                <li class="services__item">
+            <ul class="services-mobile__list">
+                <li class="services-mobile__item">
                     <div class="support"></div>
                     <p>Support 24/7</p>
                 </li>    
-                <li class="services__item">
+                <li class="services-mobile__item">
                     <div class="comunication"></div>
                     <p>Communicate directly</p>
                 </li>    
-                <li class="services__item">
+                <li class="services-mobile__item">
                        <div class="booking"></div>
                     <p>Book online</p>
                 </li>
-                <li class="services__item">
+                <li class="services-mobile__item">
                     <div class="reviews"></div>
                     <p>Real quest review</p>
                  </li>    
             </ul>
+        </div>
+    </section>
+    <section class="recommendations">
+        <div class="container">
+            <div class="recommendations__title">
+                <h2>Homes guests loves</h2>
+            </div>
+            <ul class="recommendations__list">
+                <li>
+                    <img src="./img/Rectangle 48.svg" alt=""/>
+                    <a href="#">Hotel Leopold</a>
+                    <p>Saint Petersburg, Russia</p>
+                </li>
+                <li>
+                    <img src="./img/Rectangle 49.svg" alt=""/>
+                    <a href="#">Apartment Sunshine</a>
+                    <p>Santa  Cruz de Tenerife, Spain</p>
+                </li>
+                <li>
+                    <img src="./img/Rectangle 50.svg" alt=""/>
+                    <a href="#">Villa Kunerad</a>
+                    <p>Vysokie Tatry, Slowakia</p>
+                </li> 
+                <li>
+                    <img src="./img/Rectangle 51.svg" alt=""/>
+                    <a href="#">Hostel Friendship</a>
+                    <p>Berlin, Germany</p>
+                </li>  
+            </ul>
+        </div>
+    </section>
+    <section class="recommendations-mobile">
+        <div class="container">
+            <div class="recommendations-mobile__title">
+                <h2>Homes guests loves</h2>
+            </div>
+            <ul class="recommendations-mobile__list">
+                <li>
+                    <img src="./img/Rectangle 48-mobile.svg" alt=""/>
+                    <a href="#">Hotel Leopold</a>
+                    <p>Saint Petersburg, Russia</p>
+                </li>
+                <li>
+                    <img src="./img/Rectangle 49-mobile.svg" alt=""/>
+                    <a href="#">Apartment Sunshine</a>
+                    <p>Santa  Cruz de Tenerife, Spain</p>
+                </li>
+            </ul>    
         </div>
     </section>
     <footer class="footer">
