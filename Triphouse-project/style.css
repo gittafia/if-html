@@ -27,7 +27,6 @@ li {
 .header {
     background: url(./img/top-section.png) no-repeat;
     background-size: cover;
-    /* height: 100vh; */
     padding-top: 51px;
     padding-bottom: 120px ;
 }
