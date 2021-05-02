@@ -1,0 +1,205 @@
+.destination {
+	display: block;
+}
+.destinations__title {
+	padding-top: 120px;
+	text-align: center;
+	h2 {
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 500;
+		color: #383838;
+	}
+}
+.destinations__btns {
+	margin-top: 104px;
+	display: inline-block;
+}
+.active__btn {
+	width: 192px;
+	height: 64px;
+	border-radius: 8px;
+	background-color: #3077C6;
+	border: 0;
+	cursor: pointer;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	color: white;
+	margin-right: -9px;
+}
+.destinations__btn {
+	width: 192px;
+	height: 64px;
+	border-radius: 8px;
+	background-color: #F3F3F4;
+	border: 0;
+	cursor: pointer;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	color: #383838;
+	&:nth-child(2) {
+		margin-right: -9px;
+	}
+}
+.destinations__list {
+	display: flex;
+	margin-top: 65px;
+	justify-content: space-between;
+	margin-bottom: 48px;
+}
+.destinations__list--item {
+	width: 23.5%;
+	position: relative;
+	justify-self: space-between;
+	img {
+		max-width: 100%;
+		margin-bottom: 25px;
+		width: 100%;
+		opacity: 1;
+		transition: opacity 124ms linear, transform 124ms linear;
+	}
+	&:hover {
+		.photo {
+			img {
+				opacity: 0.9;
+				transform: scale(1.05);
+			}
+		}
+		.destinations__list--btn {
+			display: block;
+			cursor: pointer;
+		}
+	}
+	+ {
+		.photo {
+			background: #fff;
+		}
+	}
+	a {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 400;
+		color: #3077C6;
+		display: block;
+		margin-top: 25px;
+	}
+}
+.photo {
+	max-height: 74%;
+	background: #000;
+	overflow: hidden;
+	background-clip: content-box;
+}
+.destinations__list--btn {
+	width: 120px;
+	height: 42px;
+	border-radius: 8px;
+	background-color: #F3F3F4;
+	border: 0;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	position: absolute;
+	top: 33%;
+	left: 25%;
+	color: #3077C6;
+	display: none;
+}
+.destinations__slider {
+	position: relative;
+	margin-top: -30px;
+	margin-bottom: 215px;
+}
+.arrows {
+	content: '';
+	width: 40px;
+	height: 40px;
+	background-image: url(./css_sprites--arrows.png);
+	background-position: -69px 7px;
+	background-color: #F3F3F4;
+	border-radius: 50%;
+	box-shadow: 0 3px 7px #707070;
+	right: 48%;
+	cursor: pointer;
+	transition: .3s linear;
+	position: absolute;
+}
+.destinations__sign-up {
+	background-color: #EAF0F9;
+	position: relative;
+	padding-top: 51px;
+	padding-bottom: 51px;
+	p {
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 500;
+		padding-left: 134px;
+	}
+}
+.destinations__sign-up--btn {
+	width: 120px;
+	height: 42px;
+	border-radius: 8px;
+	background-color: #F3F3F4;
+	border: 1px;
+	border-color: #3077C6;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	color: #3077C6;
+	margin-top: 21px;
+	margin-left: 134px;
+	cursor: pointer;
+	&:active {
+		outline: 1px solid #3077C6;
+	}
+}
+.close {
+	top: 5px;
+	right: 10px;
+	position: absolute;
+	width: 26px;
+	height: 26px;
+	opacity: 0.3;
+	&:hover {
+		opacity: 1;
+	}
+	&:before {
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 33px;
+		width: 2px;
+		background-color: #333;
+		transform: rotate(45deg);
+	}
+	&:after {
+		position: absolute;
+		left: 15px;
+		content: ' ';
+		height: 33px;
+		width: 2px;
+		background-color: #333;
+		transform: rotate(-45deg);
+	}
+}
+.user {
+	background-image: url(./icons/user.svg);
+	background-position: 20px 20px;
+	background-repeat: no-repeat;
+	background-color: #F3F3F4;
+	width: 86px;
+	height: 86px;
+	border-radius: 50%;
+	position: absolute;
+	top: 55px;
+	left: 25px;
+}
+.destinations-mobile {
+	display: none;
+}
+.promo-mobile {
+	display: none;
+}
